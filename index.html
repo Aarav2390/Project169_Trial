@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Toy Store 🚛</title>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+      
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+        <!-- JS & CSS Files -->
+        <script src="./js/marker_handler.js"></script>
+        <script src="./js/addButtons.js"></script>
+        <script src="./style.css"></script>
+        <!--<script src="./gesture-handler.js"></script>-->
+
+    </head>
+    <body>
+        <a-scene 
+        embedded vr-mode-ui="enabled: false"     
+        arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;debugUIEnabled: false;"
+        gesture-detector>
+            <!--model and plane embedded in marker-->
+            <a-marker id="beyblade-marker" type="pattern" url="./assets/beyblade/beyblade_pattern.patt" cursor="rayOrigin:mouse" 
+                      marker-handler>
+                <a-entity position="-1 0.5 -2" rotation="0 180 0" gltf-model="./assets/beyblade/beyblade_model/scene.gltf" 
+                          scale="0.015 0.015 0.015"></a-entity>
+                <a-entity position="-1 0 -1" rotation="-90 180 0" gltf-model="./assets/beyblade/beyblade_model/scene.gltf" 
+                          scale="0.015 0.015 0.015"></a-entity>
+                <a-plane position="2 0 0" rotation="90 0 0" width="10" height="10">
+                    <a-entity position="0 0 0.001" rotation="0 0 0" 
+                              text="value:This beyblade is the best; font:exo2bold; align:center; width:2; height:1"></a-entity>
+                </a-plane>
+            </a-marker>
+
+            <div id="button-div"></div>
+        </a-scene>
+    </body>
+</html>

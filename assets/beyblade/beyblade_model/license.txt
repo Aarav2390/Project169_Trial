@@ -1,0 +1,11 @@
+Model Information:
+* title:	Victory Valkyrie Legacy Evolution 2nd Remaster
+* source:	https://sketchfab.com/3d-models/victory-valkyrie-legacy-evolution-2nd-remaster-4b87e6e793c8490a9b1124b5e78bb205
+* author:	Jose-fish (https://sketchfab.com/josespinozareyes)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Victory Valkyrie Legacy Evolution 2nd Remaster" (https://sketchfab.com/3d-models/victory-valkyrie-legacy-evolution-2nd-remaster-4b87e6e793c8490a9b1124b5e78bb205) by Jose-fish (https://sketchfab.com/josespinozareyes) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
